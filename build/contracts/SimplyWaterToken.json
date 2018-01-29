@@ -1,0 +1,3618 @@
+{
+  "contractName": "SimplyWaterToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "mintingFinished",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_meterAddress",
+          "type": "address"
+        }
+      ],
+      "name": "registerMeter",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_meterAddress",
+          "type": "address"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "topUpBalanceWithEther",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_meterAddress",
+          "type": "address"
+        },
+        {
+          "name": "_firstName",
+          "type": "bytes16"
+        },
+        {
+          "name": "_lastName",
+          "type": "bytes16"
+        },
+        {
+          "name": "_memberAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addUserToMeter",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "tokensToBurn",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_subtractedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseApproval",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_penaltyCharge",
+          "type": "uint256"
+        }
+      ],
+      "name": "setPenaltyChargePerLiter",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "finishMinting",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_meterAddress",
+          "type": "address"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "topUpBalance",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_dailyLimit",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDailyLimit",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_spender",
+          "type": "address"
+        },
+        {
+          "name": "_addedValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseApproval",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_spender",
+          "type": "address"
+        }
+      ],
+      "name": "allowance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_normalCharge",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNormalChargePerLiter",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "burner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Burn",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Mint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "MintFinished",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "spender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60606040526000600360146101000a81548160ff021916908315150217905550341561002a57600080fd5b33600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550600060018190555061210b806100826000396000f30060606040526004361061011d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806305d2035b14610122578063095ea7b31461014f5780630ff98543146101a957806318160ddd146101e257806323b872dd1461020b5780632cd64a06146102845780633ddf1f01146102bb57806340c10f191461034b57806342966c68146103a557806366188463146103c85780636d16eff31461042257806370a08231146104455780637d64bcb4146104925780638da5cb5b146104bf578063a9059cbb14610514578063b0da688c1461056e578063b20d30a9146105b0578063d73dd623146105d3578063dd62ed3e1461062d578063ef90c19814610699578063f2fde38b146106bc575b600080fd5b341561012d57600080fd5b6101356106f5565b604051808215151515815260200191505060405180910390f35b341561015a57600080fd5b61018f600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610708565b604051808215151515815260200191505060405180910390f35b34156101b457600080fd5b6101e0600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506107fa565b005b34156101ed57600080fd5b6101f56109b1565b6040518082815260200191505060405180910390f35b341561021657600080fd5b61026a600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506109bb565b604051808215151515815260200191505060405180910390f35b6102b9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610d75565b005b34156102c657600080fd5b610349600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080356fffffffffffffffffffffffffffffffff19169060200190919080356fffffffffffffffffffffffffffffffff191690602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610d83565b005b341561035657600080fd5b61038b600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050611005565b604051808215151515815260200191505060405180910390f35b34156103b057600080fd5b6103c660048080359060200190919050506111eb565b005b34156103d357600080fd5b610408600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506112e2565b604051808215151515815260200191505060405180910390f35b341561042d57600080fd5b6104436004808035906020019091905050611573565b005b341561045057600080fd5b61047c600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506115d9565b6040518082815260200191505060405180910390f35b341561049d57600080fd5b6104a5611621565b604051808215151515815260200191505060405180910390f35b34156104ca57600080fd5b6104d26116e9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561051f57600080fd5b610554600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061170f565b604051808215151515815260200191505060405180910390f35b341561057957600080fd5b6105ae600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061192e565b005b34156105bb57600080fd5b6105d16004808035906020019091905050611a37565b005b34156105de57600080fd5b610613600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050611a9d565b604051808215151515815260200191505060405180910390f35b341561063857600080fd5b610683600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611c99565b6040518082815260200191505060405180910390f35b34156106a457600080fd5b6106ba6004808035906020019091905050611d20565b005b34156106c757600080fd5b6106f3600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611d86565b005b600360149054906101000a900460ff1681565b600081600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040518082815260200191505060405180910390a36001905092915050565b610802612067565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561085e57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff16600760008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415156108fb57600080fd5b6020604051908101604052808373ffffffffffffffffffffffffffffffffffffffff16815250905080600760008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050505050565b6000600154905090565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156109f857600080fd5b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548211151515610a4557600080fd5b600260008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548211151515610ad057600080fd5b610b21826000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610bb4826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610c8582600260008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190509392505050565b610d7f828261192e565b5050565b610d8b612091565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610de757600080fd5b600073ffffffffffffffffffffffffffffffffffffffff16600760008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614151515610e8557600080fd5b606060405190810160405280856fffffffffffffffffffffffffffffffff19168152602001846fffffffffffffffffffffffffffffffff19166000191681526020018373ffffffffffffffffffffffffffffffffffffffff16815250905080600760008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a8154816fffffffffffffffffffffffffffffffff0219169083700100000000000000000000000000000000900402179055506020820151816001019060001916905560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050505050505050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561106357600080fd5b600360149054906101000a900460ff1615151561107f57600080fd5b61109482600154611ef790919063ffffffff16565b6001819055506110eb826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff167f0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885836040518082815260200191505060405180910390a28273ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600073ffffffffffffffffffffffffffffffffffffffff16600760003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415151561128957600080fd5b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101515156112d657600080fd5b6112df81611f15565b50565b600080600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050808311156113f3576000600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550611487565b6114068382611ede90919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505b8373ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a3600191505092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156115cf57600080fd5b8060058190555050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561167f57600080fd5b600360149054906101000a900460ff1615151561169b57600080fd5b6001600360146101000a81548160ff0219169083151502179055507fae5184fba832cb2b1f702aca6117b8d265eaf03ad33eb133f19dde0f5920fa0860405160405180910390a16001905090565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561174c57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561179957600080fd5b6117ea826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555061187d826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561198a57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff16600760008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614151515611a2857600080fd5b611a328282611005565b505050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515611a9357600080fd5b8060048190555050565b6000611b2e82600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a36001905092915050565b6000600260008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515611d7c57600080fd5b8060068190555050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515611de257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515611e1e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a380600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000828211151515611eec57fe5b818303905092915050565b6000808284019050838110151515611f0b57fe5b8091505092915050565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548211151515611f6457600080fd5b339050611fb8826000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b6000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555061200f82600154611ede90919063ffffffff16565b6001819055508073ffffffffffffffffffffffffffffffffffffffff167fcc16f5dbb4873280815c1ee09dbd06736cffcc184412cf7a71a0fdb75d397ca5836040518082815260200191505060405180910390a25050565b602060405190810160405280600073ffffffffffffffffffffffffffffffffffffffff1681525090565b60606040519081016040528060006fffffffffffffffffffffffffffffffff1916815260200160008019168152602001600073ffffffffffffffffffffffffffffffffffffffff16815250905600a165627a7a723058202a49c142eb6f0e1d0d7cc2cc28c1bdb077d68319e391fbefb837f8218fae20230029",
+  "deployedBytecode": "0x60606040526004361061011d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806305d2035b14610122578063095ea7b31461014f5780630ff98543146101a957806318160ddd146101e257806323b872dd1461020b5780632cd64a06146102845780633ddf1f01146102bb57806340c10f191461034b57806342966c68146103a557806366188463146103c85780636d16eff31461042257806370a08231146104455780637d64bcb4146104925780638da5cb5b146104bf578063a9059cbb14610514578063b0da688c1461056e578063b20d30a9146105b0578063d73dd623146105d3578063dd62ed3e1461062d578063ef90c19814610699578063f2fde38b146106bc575b600080fd5b341561012d57600080fd5b6101356106f5565b604051808215151515815260200191505060405180910390f35b341561015a57600080fd5b61018f600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610708565b604051808215151515815260200191505060405180910390f35b34156101b457600080fd5b6101e0600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506107fa565b005b34156101ed57600080fd5b6101f56109b1565b6040518082815260200191505060405180910390f35b341561021657600080fd5b61026a600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506109bb565b604051808215151515815260200191505060405180910390f35b6102b9600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050610d75565b005b34156102c657600080fd5b610349600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080356fffffffffffffffffffffffffffffffff19169060200190919080356fffffffffffffffffffffffffffffffff191690602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610d83565b005b341561035657600080fd5b61038b600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050611005565b604051808215151515815260200191505060405180910390f35b34156103b057600080fd5b6103c660048080359060200190919050506111eb565b005b34156103d357600080fd5b610408600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919080359060200190919050506112e2565b604051808215151515815260200191505060405180910390f35b341561042d57600080fd5b6104436004808035906020019091905050611573565b005b341561045057600080fd5b61047c600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506115d9565b6040518082815260200191505060405180910390f35b341561049d57600080fd5b6104a5611621565b604051808215151515815260200191505060405180910390f35b34156104ca57600080fd5b6104d26116e9565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b341561051f57600080fd5b610554600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061170f565b604051808215151515815260200191505060405180910390f35b341561057957600080fd5b6105ae600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803590602001909190505061192e565b005b34156105bb57600080fd5b6105d16004808035906020019091905050611a37565b005b34156105de57600080fd5b610613600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091908035906020019091905050611a9d565b604051808215151515815260200191505060405180910390f35b341561063857600080fd5b610683600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611c99565b6040518082815260200191505060405180910390f35b34156106a457600080fd5b6106ba6004808035906020019091905050611d20565b005b34156106c757600080fd5b6106f3600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050611d86565b005b600360149054906101000a900460ff1681565b600081600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925846040518082815260200191505060405180910390a36001905092915050565b610802612067565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561085e57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff16600760008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415156108fb57600080fd5b6020604051908101604052808373ffffffffffffffffffffffffffffffffffffffff16815250905080600760008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050505050565b6000600154905090565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff16141515156109f857600080fd5b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548211151515610a4557600080fd5b600260008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548211151515610ad057600080fd5b610b21826000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610bb4826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610c8582600260008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b600260008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff168473ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190509392505050565b610d7f828261192e565b5050565b610d8b612091565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515610de757600080fd5b600073ffffffffffffffffffffffffffffffffffffffff16600760008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614151515610e8557600080fd5b606060405190810160405280856fffffffffffffffffffffffffffffffff19168152602001846fffffffffffffffffffffffffffffffff19166000191681526020018373ffffffffffffffffffffffffffffffffffffffff16815250905080600760008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a8154816fffffffffffffffffffffffffffffffff0219169083700100000000000000000000000000000000900402179055506020820151816001019060001916905560408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050505050505050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561106357600080fd5b600360149054906101000a900460ff1615151561107f57600080fd5b61109482600154611ef790919063ffffffff16565b6001819055506110eb826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff167f0f6798a560793a54c3bcfe86a93cde1e73087d944c0ea20544137d4121396885836040518082815260200191505060405180910390a28273ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600073ffffffffffffffffffffffffffffffffffffffff16600760003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415151561128957600080fd5b806000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054101515156112d657600080fd5b6112df81611f15565b50565b600080600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050808311156113f3576000600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550611487565b6114068382611ede90919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505b8373ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008873ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a3600191505092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156115cf57600080fd5b8060058190555050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561167f57600080fd5b600360149054906101000a900460ff1615151561169b57600080fd5b6001600360146101000a81548160ff0219169083151502179055507fae5184fba832cb2b1f702aca6117b8d265eaf03ad33eb133f19dde0f5920fa0860405160405180910390a16001905090565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008073ffffffffffffffffffffffffffffffffffffffff168373ffffffffffffffffffffffffffffffffffffffff161415151561174c57600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054821115151561179957600080fd5b6117ea826000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555061187d826000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b6000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a36001905092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561198a57600080fd5b600073ffffffffffffffffffffffffffffffffffffffff16600760008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614151515611a2857600080fd5b611a328282611005565b505050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515611a9357600080fd5b8060048190555050565b6000611b2e82600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ef790919063ffffffff16565b600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925600260003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020546040518082815260200191505060405180910390a36001905092915050565b6000600260008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905092915050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515611d7c57600080fd5b8060068190555050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141515611de257600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515611e1e57600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a380600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6000828211151515611eec57fe5b818303905092915050565b6000808284019050838110151515611f0b57fe5b8091505092915050565b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020548211151515611f6457600080fd5b339050611fb8826000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054611ede90919063ffffffff16565b6000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555061200f82600154611ede90919063ffffffff16565b6001819055508073ffffffffffffffffffffffffffffffffffffffff167fcc16f5dbb4873280815c1ee09dbd06736cffcc184412cf7a71a0fdb75d397ca5836040518082815260200191505060405180910390a25050565b602060405190810160405280600073ffffffffffffffffffffffffffffffffffffffff1681525090565b60606040519081016040528060006fffffffffffffffffffffffffffffffff1916815260200160008019168152602001600073ffffffffffffffffffffffffffffffffffffffff16815250905600a165627a7a723058202a49c142eb6f0e1d0d7cc2cc28c1bdb077d68319e391fbefb837f8218fae20230029",
+  "sourceMap": "162:2185:0:-;;;544:5:7;514:35;;;;;;;;;;;;;;;;;;;;639:135:0;;;;;;;;509:10:2;501:5;;:18;;;;;;;;;;;;;;;;;;699:1:0;684:12;:16;;;;162:2185;;;;;;",
+  "deployedSourceMap": "162:2185:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;514:35:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1798:183:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;783:260:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;371:83:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;736:439:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2210:132:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;1048:369;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;853:264:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1994:210:0;;;;;;;;;;;;;;;;;;;;;;;;;;3602:398:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1528:127:0;;;;;;;;;;;;;;;;;;;;;;;;;;1189:107:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1231:135:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;238:20:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;608:379:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1790:198:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1423:99;;;;;;;;;;;;;;;;;;;;;;;;;;2883:257:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2300:126;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1661:123:0;;;;;;;;;;;;;;;;;;;;;;;;;;832:169:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;514:35:7;;;;;;;;;;;;;:::o;1798:183:8:-;1865:4;1909:6;1877:7;:19;1885:10;1877:19;;;;;;;;;;;;;;;:29;1897:8;1877:29;;;;;;;;;;;;;;;:38;;;;1942:8;1921:38;;1930:10;1921:38;;;1952:6;1921:38;;;;;;;;;;;;;;;;;;1972:4;1965:11;;1798:183;;;;:::o;783:260:0:-;933:12;;:::i;:::-;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;920:1:0;864:58;;:16;:31;881:13;864:31;;;;;;;;;;;;;;;:44;;;;;;;;;;;;:58;;;856:67;;;;;;;;948:36;;;;;;;;;969:13;948:36;;;;;933:51;;1028:8;994:16;:31;1011:13;994:31;;;;;;;;;;;;;;;:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;783:260;;:::o;371:83:3:-;415:7;437:12;;430:19;;371:83;:::o;736:439:8:-;818:4;853:1;838:17;;:3;:17;;;;830:26;;;;;;;;880:8;:15;889:5;880:15;;;;;;;;;;;;;;;;870:6;:25;;862:34;;;;;;;;920:7;:14;928:5;920:14;;;;;;;;;;;;;;;:26;935:10;920:26;;;;;;;;;;;;;;;;910:6;:36;;902:45;;;;;;;;972:27;992:6;972:8;:15;981:5;972:15;;;;;;;;;;;;;;;;:19;;:27;;;;:::i;:::-;954:8;:15;963:5;954:15;;;;;;;;;;;;;;;:45;;;;1021:25;1039:6;1021:8;:13;1030:3;1021:13;;;;;;;;;;;;;;;;:17;;:25;;;;:::i;:::-;1005:8;:13;1014:3;1005:13;;;;;;;;;;;;;;;:41;;;;1081:38;1112:6;1081:7;:14;1089:5;1081:14;;;;;;;;;;;;;;;:26;1096:10;1081:26;;;;;;;;;;;;;;;;:30;;:38;;;;:::i;:::-;1052:7;:14;1060:5;1052:14;;;;;;;;;;;;;;;:26;1067:10;1052:26;;;;;;;;;;;;;;;:67;;;;1141:3;1125:28;;1134:5;1125:28;;;1146:6;1125:28;;;;;;;;;;;;;;;;;;1166:4;1159:11;;736:439;;;;;:::o;2210:132:0:-;2301:34;2314:13;2329:5;2301:12;:34::i;:::-;2210:132;;:::o;1048:369::-;1262:13;;:::i;:::-;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;1249:1:0;1193:58;;:16;:31;1210:13;1193:31;;;;;;;;;;;;;;;:44;;;;;;;;;;;;:58;;;;1185:67;;;;;;;;1278:50;;;;;;;;;1290:10;1278:50;;;;;;;1302:9;1278:50;;;;;;;;;;1313:14;1278:50;;;;;1262:66;;1401:9;1338:16;:31;1355:13;1338:31;;;;;;;;;;;;;;;:44;;:60;1383:14;1338:60;;;;;;;;;;;;;;;:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1048:369;;;;;:::o;853:264:7:-;931:4;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;589:15:7;;;;;;;;;;;588:16;580:25;;;;;;;;958;975:7;958:12;;:16;;:25;;;;:::i;:::-;943:12;:40;;;;1005:26;1023:7;1005:8;:13;1014:3;1005:13;;;;;;;;;;;;;;;;:17;;:26;;;;:::i;:::-;989:8;:13;998:3;989:13;;;;;;;;;;;;;;;:42;;;;1042:3;1037:18;;;1047:7;1037:18;;;;;;;;;;;;;;;;;;1082:3;1061:34;;1078:1;1061:34;;;1087:7;1061:34;;;;;;;;;;;;;;;;;;1108:4;1101:11;;853:264;;;;:::o;1994:210:0:-;2105:1;2052:55;;:16;:28;2069:10;2052:28;;;;;;;;;;;;;;;:41;;;;;;;;;;;;:55;;;;2044:64;;;;;;;;2150:12;2126:8;:20;2135:10;2126:20;;;;;;;;;;;;;;;;:36;;2118:45;;;;;;;;2173:24;2184:12;2173:10;:24::i;:::-;1994:210;:::o;3602:398:8:-;3685:4;3697:13;3713:7;:19;3721:10;3713:19;;;;;;;;;;;;;;;:29;3733:8;3713:29;;;;;;;;;;;;;;;;3697:45;;3771:8;3752:16;:27;3748:164;;;3821:1;3789:7;:19;3797:10;3789:19;;;;;;;;;;;;;;;:29;3809:8;3789:29;;;;;;;;;;;;;;;:33;;;;3748:164;;;3875:30;3888:16;3875:8;:12;;:30;;;;:::i;:::-;3843:7;:19;3851:10;3843:19;;;;;;;;;;;;;;;:29;3863:8;3843:29;;;;;;;;;;;;;;;:62;;;;3748:164;3938:8;3917:61;;3926:10;3917:61;;;3948:7;:19;3956:10;3948:19;;;;;;;;;;;;;;;:29;3968:8;3948:29;;;;;;;;;;;;;;;;3917:61;;;;;;;;;;;;;;;;;;3991:4;3984:11;;3602:398;;;;;:::o;1528:127:0:-;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;1634:14:0;1610:21;:38;;;;1528:127;:::o;1189:107:3:-;1245:15;1275:8;:16;1284:6;1275:16;;;;;;;;;;;;;;;;1268:23;;1189:107;;;:::o;1231:135:7:-;1290:4;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;589:15:7;;;;;;;;;;;588:16;580:25;;;;;;;;1320:4;1302:15;;:22;;;;;;;;;;;;;;;;;;1330:14;;;;;;;;;;1357:4;1350:11;;1231:135;:::o;238:20:2:-;;;;;;;;;;;;;:::o;608:379:3:-;671:4;706:1;691:17;;:3;:17;;;;683:26;;;;;;;;733:8;:20;742:10;733:20;;;;;;;;;;;;;;;;723:6;:30;;715:39;;;;;;;;847:32;872:6;847:8;:20;856:10;847:20;;;;;;;;;;;;;;;;:24;;:32;;;;:::i;:::-;824:8;:20;833:10;824:20;;;;;;;;;;;;;;;:55;;;;901:25;919:6;901:8;:13;910:3;901:13;;;;;;;;;;;;;;;;:17;;:25;;;;:::i;:::-;885:8;:13;894:3;885:13;;;;;;;;;;;;;;;:41;;;;953:3;932:33;;941:10;932:33;;;958:6;932:33;;;;;;;;;;;;;;;;;;978:4;971:11;;608:379;;;;:::o;1790:198:0:-;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;1938:1:0;1882:58;;:16;:31;1899:13;1882:31;;;;;;;;;;;;;;;:44;;;;;;;;;;;;:58;;;;1874:67;;;;;;;;1951:26;1956:13;1971:5;1951:4;:26::i;:::-;;1790:198;;:::o;1423:99::-;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;1504:11:0;1491:10;:24;;;;1423:99;:::o;2883:257:8:-;2961:4;3005:46;3039:11;3005:7;:19;3013:10;3005:19;;;;;;;;;;;;;;;:29;3025:8;3005:29;;;;;;;;;;;;;;;;:33;;:46;;;;:::i;:::-;2973:7;:19;2981:10;2973:19;;;;;;;;;;;;;;;:29;2993:8;2973:29;;;;;;;;;;;;;;;:78;;;;3078:8;3057:61;;3066:10;3057:61;;;3088:7;:19;3096:10;3088:19;;;;;;;;;;;;;;;:29;3108:8;3088:29;;;;;;;;;;;;;;;;3057:61;;;;;;;;;;;;;;;;;;3131:4;3124:11;;2883:257;;;;:::o;2300:126::-;2374:7;2396;:15;2404:6;2396:15;;;;;;;;;;;;;;;:25;2412:8;2396:25;;;;;;;;;;;;;;;;2389:32;;2300:126;;;;:::o;1661:123:0:-;653:5:2;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;1764:13:0;1741:20;:36;;;;1661:123;:::o;832:169:2:-;653:5;;;;;;;;;;;639:19;;:10;:19;;;631:28;;;;;;;;928:1;908:22;;:8;:22;;;;900:31;;;;;;;;965:8;937:37;;958:5;;;;;;;;;;;937:37;;;;;;;;;;;;988:8;980:5;;:16;;;;;;;;;;;;;;;;;;832:169;:::o;836:110:1:-;894:7;921:1;916;:6;;909:14;;;;;;940:1;936;:5;929:12;;836:110;;;;:::o;1008:129::-;1066:7;1081:9;1097:1;1093;:5;1081:17;;1116:1;1111;:6;;1104:14;;;;;;1131:1;1124:8;;1008:129;;;;;:::o;353:416:4:-;613:14;414:8;:20;423:10;414:20;;;;;;;;;;;;;;;;404:6;:30;;396:39;;;;;;;;630:10;613:27;;665:28;686:6;665:8;:16;674:6;665:16;;;;;;;;;;;;;;;;:20;;:28;;;;:::i;:::-;646:8;:16;655:6;646:16;;;;;;;;;;;;;;;:47;;;;714:24;731:6;714:12;;:16;;:24;;;;:::i;:::-;699:12;:39;;;;749:6;744:20;;;757:6;744:20;;;;;;;;;;;;;;;;;;353:416;;:::o;162:2185:0:-;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.18;\nimport \"zeppelin-solidity/contracts/token/ERC20/MintableToken.sol\";\nimport \"zeppelin-solidity/contracts/token/ERC20/BurnableToken.sol\";\n\ncontract SimplyWaterToken is MintableToken, BurnableToken {\n\n    uint dailyLimit;\n    uint penaltyChargePerLiter;\n    uint normalChargePerLiter;\n    mapping(address => Meter) registeredMeters;\n    uint constant ETHERIUM_TO_SWT_EXCHANGE_RATE = 2;\n\n    struct Meter {\n        address meterAddress;\n        mapping(address => HouseMember) houseMembers;\n    }\n\n    struct HouseMember {\n        bytes16 firstName;\n        bytes32 lastName;\n        address memberAddress;\n    }\n\n    function SimplyWaterToken() public {\n        totalSupply_ = 0; //there is no total supply. New coins will continuously be minted.\n    }\n   \n    function registerMeter(address _meterAddress) onlyOwner public {\n        require(registeredMeters[_meterAddress].meterAddress == address(0));\n        var newMeter = Meter({meterAddress: _meterAddress});\n        registeredMeters[_meterAddress] = newMeter;\n    }\n\n   function addUserToMeter(address _meterAddress, bytes16 _firstName, bytes16 _lastName, address _memberAddress) onlyOwner public {\n        require(registeredMeters[_meterAddress].meterAddress != address(0));\n        var newMember = HouseMember(_firstName, _lastName, _memberAddress);\n        registeredMeters[_meterAddress].houseMembers[_memberAddress] = newMember;\n    }\n\n    function setDailyLimit(uint _dailyLimit) onlyOwner public {\n        dailyLimit = _dailyLimit;\n    }\n\n    function setPenaltyChargePerLiter(uint _penaltyCharge) onlyOwner public {\n        penaltyChargePerLiter = _penaltyCharge;\n    }\n\n    function setNormalChargePerLiter(uint _normalCharge) onlyOwner public {\n        normalChargePerLiter = _normalCharge;\n    }\n\n    function topUpBalance(address _meterAddress, uint value) onlyOwner public {\n        require(registeredMeters[_meterAddress].meterAddress != address(0));\n        mint(_meterAddress, value);    \n    }\n\n    function burn(uint tokensToBurn) public {\n        require(registeredMeters[msg.sender].meterAddress != address(0));\n        require(balances[msg.sender] >= tokensToBurn);\n        super.burn(tokensToBurn);\n    }\n\n    function topUpBalanceWithEther(address _meterAddress, uint value) payable public {\n        topUpBalance(_meterAddress, value);\n    }\n   }",
+  "sourcePath": "/home/ben/Development/SimpliWater/contracts/SimplyWaterToken.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/ben/Development/SimpliWater/contracts/SimplyWaterToken.sol",
+      "exportedSymbols": {
+        "SimplyWaterToken": [
+          222
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 698,
+          "absolutePath": "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
+          "file": "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
+          "scope": 223,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2,
+        "name": "ImportDirective",
+        "src": "25:67:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 528,
+          "absolutePath": "zeppelin-solidity/contracts/token/ERC20/BurnableToken.sol",
+          "file": "zeppelin-solidity/contracts/token/ERC20/BurnableToken.sol",
+          "scope": 223,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3,
+        "name": "ImportDirective",
+        "src": "93:67:0"
+      },
+      {
+        "attributes": {
+          "contractDependencies": [
+            376,
+            472,
+            527,
+            570,
+            602,
+            697,
+            943
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            222,
+            527,
+            697,
+            376,
+            943,
+            472,
+            570,
+            602
+          ],
+          "name": "SimplyWaterToken",
+          "scope": 223
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "MintableToken",
+                  "referencedDeclaration": 697,
+                  "type": "contract MintableToken"
+                },
+                "id": 4,
+                "name": "UserDefinedTypeName",
+                "src": "191:13:0"
+              }
+            ],
+            "id": 5,
+            "name": "InheritanceSpecifier",
+            "src": "191:13:0"
+          },
+          {
+            "attributes": {
+              "arguments": [
+                null
+              ]
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "BurnableToken",
+                  "referencedDeclaration": 527,
+                  "type": "contract BurnableToken"
+                },
+                "id": 6,
+                "name": "UserDefinedTypeName",
+                "src": "206:13:0"
+              }
+            ],
+            "id": 7,
+            "name": "InheritanceSpecifier",
+            "src": "206:13:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "dailyLimit",
+              "scope": 222,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 8,
+                "name": "ElementaryTypeName",
+                "src": "227:4:0"
+              }
+            ],
+            "id": 9,
+            "name": "VariableDeclaration",
+            "src": "227:15:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "penaltyChargePerLiter",
+              "scope": 222,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 10,
+                "name": "ElementaryTypeName",
+                "src": "248:4:0"
+              }
+            ],
+            "id": 11,
+            "name": "VariableDeclaration",
+            "src": "248:26:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "normalChargePerLiter",
+              "scope": 222,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 12,
+                "name": "ElementaryTypeName",
+                "src": "280:4:0"
+              }
+            ],
+            "id": 13,
+            "name": "VariableDeclaration",
+            "src": "280:25:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "registeredMeters",
+              "scope": 222,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 14,
+                    "name": "ElementaryTypeName",
+                    "src": "319:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Meter",
+                      "referencedDeclaration": 27,
+                      "type": "struct SimplyWaterToken.Meter storage pointer"
+                    },
+                    "id": 15,
+                    "name": "UserDefinedTypeName",
+                    "src": "330:5:0"
+                  }
+                ],
+                "id": 16,
+                "name": "Mapping",
+                "src": "311:25:0"
+              }
+            ],
+            "id": 17,
+            "name": "VariableDeclaration",
+            "src": "311:42:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "name": "ETHERIUM_TO_SWT_EXCHANGE_RATE",
+              "scope": 222,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 18,
+                "name": "ElementaryTypeName",
+                "src": "359:4:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "32",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 2",
+                  "value": "2"
+                },
+                "id": 19,
+                "name": "Literal",
+                "src": "405:1:0"
+              }
+            ],
+            "id": 20,
+            "name": "VariableDeclaration",
+            "src": "359:47:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "SimplyWaterToken.Meter",
+              "name": "Meter",
+              "scope": 222,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "meterAddress",
+                  "scope": 27,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 21,
+                    "name": "ElementaryTypeName",
+                    "src": "436:7:0"
+                  }
+                ],
+                "id": 22,
+                "name": "VariableDeclaration",
+                "src": "436:20:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "houseMembers",
+                  "scope": 27,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "mapping(address => struct SimplyWaterToken.HouseMember storage ref)",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "type": "mapping(address => struct SimplyWaterToken.HouseMember storage ref)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 23,
+                        "name": "ElementaryTypeName",
+                        "src": "474:7:0"
+                      },
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "HouseMember",
+                          "referencedDeclaration": 34,
+                          "type": "struct SimplyWaterToken.HouseMember storage pointer"
+                        },
+                        "id": 24,
+                        "name": "UserDefinedTypeName",
+                        "src": "485:11:0"
+                      }
+                    ],
+                    "id": 25,
+                    "name": "Mapping",
+                    "src": "466:31:0"
+                  }
+                ],
+                "id": 26,
+                "name": "VariableDeclaration",
+                "src": "466:44:0"
+              }
+            ],
+            "id": 27,
+            "name": "StructDefinition",
+            "src": "413:104:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "SimplyWaterToken.HouseMember",
+              "name": "HouseMember",
+              "scope": 222,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "firstName",
+                  "scope": 34,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes16",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes16",
+                      "type": "bytes16"
+                    },
+                    "id": 28,
+                    "name": "ElementaryTypeName",
+                    "src": "552:7:0"
+                  }
+                ],
+                "id": 29,
+                "name": "VariableDeclaration",
+                "src": "552:17:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "lastName",
+                  "scope": 34,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bytes32",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bytes32",
+                      "type": "bytes32"
+                    },
+                    "id": 30,
+                    "name": "ElementaryTypeName",
+                    "src": "579:7:0"
+                  }
+                ],
+                "id": 31,
+                "name": "VariableDeclaration",
+                "src": "579:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "memberAddress",
+                  "scope": 34,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 32,
+                    "name": "ElementaryTypeName",
+                    "src": "605:7:0"
+                  }
+                ],
+                "id": 33,
+                "name": "VariableDeclaration",
+                "src": "605:21:0"
+              }
+            ],
+            "id": 34,
+            "name": "StructDefinition",
+            "src": "523:110:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "SimplyWaterToken",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "664:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 36,
+                "name": "ParameterList",
+                "src": "674:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 391,
+                              "type": "uint256",
+                              "value": "totalSupply_"
+                            },
+                            "id": 37,
+                            "name": "Identifier",
+                            "src": "684:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 38,
+                            "name": "Literal",
+                            "src": "699:1:0"
+                          }
+                        ],
+                        "id": 39,
+                        "name": "Assignment",
+                        "src": "684:16:0"
+                      }
+                    ],
+                    "id": 40,
+                    "name": "ExpressionStatement",
+                    "src": "684:16:0"
+                  }
+                ],
+                "id": 41,
+                "name": "Block",
+                "src": "674:100:0"
+              }
+            ],
+            "id": 42,
+            "name": "FunctionDefinition",
+            "src": "639:135:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "registerMeter",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_meterAddress",
+                      "scope": 72,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 43,
+                        "name": "ElementaryTypeName",
+                        "src": "806:7:0"
+                      }
+                    ],
+                    "id": 44,
+                    "name": "VariableDeclaration",
+                    "src": "806:21:0"
+                  }
+                ],
+                "id": 45,
+                "name": "ParameterList",
+                "src": "805:23:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 48,
+                "name": "ParameterList",
+                "src": "846:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 350,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 46,
+                    "name": "Identifier",
+                    "src": "829:9:0"
+                  }
+                ],
+                "id": 47,
+                "name": "ModifierInvocation",
+                "src": "829:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 958,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 49,
+                            "name": "Identifier",
+                            "src": "856:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "meterAddress",
+                                  "referencedDeclaration": 22,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct SimplyWaterToken.Meter storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 17,
+                                          "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+                                          "value": "registeredMeters"
+                                        },
+                                        "id": 50,
+                                        "name": "Identifier",
+                                        "src": "864:16:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 44,
+                                          "type": "address",
+                                          "value": "_meterAddress"
+                                        },
+                                        "id": 51,
+                                        "name": "Identifier",
+                                        "src": "881:13:0"
+                                      }
+                                    ],
+                                    "id": 52,
+                                    "name": "IndexAccess",
+                                    "src": "864:31:0"
+                                  }
+                                ],
+                                "id": 53,
+                                "name": "MemberAccess",
+                                "src": "864:44:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "address",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_rational_0_by_1",
+                                          "typeString": "int_const 0"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)",
+                                      "value": "address"
+                                    },
+                                    "id": 54,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "912:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "30",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0"
+                                    },
+                                    "id": 55,
+                                    "name": "Literal",
+                                    "src": "920:1:0"
+                                  }
+                                ],
+                                "id": 56,
+                                "name": "FunctionCall",
+                                "src": "912:10:0"
+                              }
+                            ],
+                            "id": 57,
+                            "name": "BinaryOperation",
+                            "src": "864:58:0"
+                          }
+                        ],
+                        "id": 58,
+                        "name": "FunctionCall",
+                        "src": "856:67:0"
+                      }
+                    ],
+                    "id": 59,
+                    "name": "ExpressionStatement",
+                    "src": "856:67:0"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        60
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "newMeter",
+                          "scope": 72,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "struct SimplyWaterToken.Meter memory",
+                          "typeName": null,
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [],
+                        "id": 60,
+                        "name": "VariableDeclaration",
+                        "src": "933:12:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            "meterAddress"
+                          ],
+                          "type": "struct SimplyWaterToken.Meter memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 27,
+                              "type": "type(struct SimplyWaterToken.Meter storage pointer)",
+                              "value": "Meter"
+                            },
+                            "id": 61,
+                            "name": "Identifier",
+                            "src": "948:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 44,
+                              "type": "address",
+                              "value": "_meterAddress"
+                            },
+                            "id": 62,
+                            "name": "Identifier",
+                            "src": "969:13:0"
+                          }
+                        ],
+                        "id": 63,
+                        "name": "FunctionCall",
+                        "src": "948:36:0"
+                      }
+                    ],
+                    "id": 64,
+                    "name": "VariableDeclarationStatement",
+                    "src": "933:51:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct SimplyWaterToken.Meter storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct SimplyWaterToken.Meter storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 17,
+                                  "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+                                  "value": "registeredMeters"
+                                },
+                                "id": 65,
+                                "name": "Identifier",
+                                "src": "994:16:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 44,
+                                  "type": "address",
+                                  "value": "_meterAddress"
+                                },
+                                "id": 66,
+                                "name": "Identifier",
+                                "src": "1011:13:0"
+                              }
+                            ],
+                            "id": 67,
+                            "name": "IndexAccess",
+                            "src": "994:31:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 60,
+                              "type": "struct SimplyWaterToken.Meter memory",
+                              "value": "newMeter"
+                            },
+                            "id": 68,
+                            "name": "Identifier",
+                            "src": "1028:8:0"
+                          }
+                        ],
+                        "id": 69,
+                        "name": "Assignment",
+                        "src": "994:42:0"
+                      }
+                    ],
+                    "id": 70,
+                    "name": "ExpressionStatement",
+                    "src": "994:42:0"
+                  }
+                ],
+                "id": 71,
+                "name": "Block",
+                "src": "846:197:0"
+              }
+            ],
+            "id": 72,
+            "name": "FunctionDefinition",
+            "src": "783:260:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "addUserToMeter",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_meterAddress",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 73,
+                        "name": "ElementaryTypeName",
+                        "src": "1072:7:0"
+                      }
+                    ],
+                    "id": 74,
+                    "name": "VariableDeclaration",
+                    "src": "1072:21:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_firstName",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes16",
+                          "type": "bytes16"
+                        },
+                        "id": 75,
+                        "name": "ElementaryTypeName",
+                        "src": "1095:7:0"
+                      }
+                    ],
+                    "id": 76,
+                    "name": "VariableDeclaration",
+                    "src": "1095:18:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_lastName",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes16",
+                          "type": "bytes16"
+                        },
+                        "id": 77,
+                        "name": "ElementaryTypeName",
+                        "src": "1115:7:0"
+                      }
+                    ],
+                    "id": 78,
+                    "name": "VariableDeclaration",
+                    "src": "1115:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_memberAddress",
+                      "scope": 113,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 79,
+                        "name": "ElementaryTypeName",
+                        "src": "1134:7:0"
+                      }
+                    ],
+                    "id": 80,
+                    "name": "VariableDeclaration",
+                    "src": "1134:22:0"
+                  }
+                ],
+                "id": 81,
+                "name": "ParameterList",
+                "src": "1071:86:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 84,
+                "name": "ParameterList",
+                "src": "1175:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 350,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 82,
+                    "name": "Identifier",
+                    "src": "1158:9:0"
+                  }
+                ],
+                "id": 83,
+                "name": "ModifierInvocation",
+                "src": "1158:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 958,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 85,
+                            "name": "Identifier",
+                            "src": "1185:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "!=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "meterAddress",
+                                  "referencedDeclaration": 22,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct SimplyWaterToken.Meter storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 17,
+                                          "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+                                          "value": "registeredMeters"
+                                        },
+                                        "id": 86,
+                                        "name": "Identifier",
+                                        "src": "1193:16:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 74,
+                                          "type": "address",
+                                          "value": "_meterAddress"
+                                        },
+                                        "id": 87,
+                                        "name": "Identifier",
+                                        "src": "1210:13:0"
+                                      }
+                                    ],
+                                    "id": 88,
+                                    "name": "IndexAccess",
+                                    "src": "1193:31:0"
+                                  }
+                                ],
+                                "id": 89,
+                                "name": "MemberAccess",
+                                "src": "1193:44:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "address",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_rational_0_by_1",
+                                          "typeString": "int_const 0"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)",
+                                      "value": "address"
+                                    },
+                                    "id": 90,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "1241:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "30",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0"
+                                    },
+                                    "id": 91,
+                                    "name": "Literal",
+                                    "src": "1249:1:0"
+                                  }
+                                ],
+                                "id": 92,
+                                "name": "FunctionCall",
+                                "src": "1241:10:0"
+                              }
+                            ],
+                            "id": 93,
+                            "name": "BinaryOperation",
+                            "src": "1193:58:0"
+                          }
+                        ],
+                        "id": 94,
+                        "name": "FunctionCall",
+                        "src": "1185:67:0"
+                      }
+                    ],
+                    "id": 95,
+                    "name": "ExpressionStatement",
+                    "src": "1185:67:0"
+                  },
+                  {
+                    "attributes": {
+                      "assignments": [
+                        96
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "newMember",
+                          "scope": 113,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "struct SimplyWaterToken.HouseMember memory",
+                          "typeName": null,
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [],
+                        "id": 96,
+                        "name": "VariableDeclaration",
+                        "src": "1262:13:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": true,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "struct SimplyWaterToken.HouseMember memory",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bytes16",
+                                  "typeString": "bytes16"
+                                },
+                                {
+                                  "typeIdentifier": "t_bytes16",
+                                  "typeString": "bytes16"
+                                },
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 34,
+                              "type": "type(struct SimplyWaterToken.HouseMember storage pointer)",
+                              "value": "HouseMember"
+                            },
+                            "id": 97,
+                            "name": "Identifier",
+                            "src": "1278:11:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 76,
+                              "type": "bytes16",
+                              "value": "_firstName"
+                            },
+                            "id": 98,
+                            "name": "Identifier",
+                            "src": "1290:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 78,
+                              "type": "bytes16",
+                              "value": "_lastName"
+                            },
+                            "id": 99,
+                            "name": "Identifier",
+                            "src": "1302:9:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 80,
+                              "type": "address",
+                              "value": "_memberAddress"
+                            },
+                            "id": 100,
+                            "name": "Identifier",
+                            "src": "1313:14:0"
+                          }
+                        ],
+                        "id": 101,
+                        "name": "FunctionCall",
+                        "src": "1278:50:0"
+                      }
+                    ],
+                    "id": 102,
+                    "name": "VariableDeclarationStatement",
+                    "src": "1262:66:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct SimplyWaterToken.HouseMember storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct SimplyWaterToken.HouseMember storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "houseMembers",
+                                  "referencedDeclaration": 26,
+                                  "type": "mapping(address => struct SimplyWaterToken.HouseMember storage ref)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct SimplyWaterToken.Meter storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 17,
+                                          "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+                                          "value": "registeredMeters"
+                                        },
+                                        "id": 103,
+                                        "name": "Identifier",
+                                        "src": "1338:16:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 74,
+                                          "type": "address",
+                                          "value": "_meterAddress"
+                                        },
+                                        "id": 104,
+                                        "name": "Identifier",
+                                        "src": "1355:13:0"
+                                      }
+                                    ],
+                                    "id": 105,
+                                    "name": "IndexAccess",
+                                    "src": "1338:31:0"
+                                  }
+                                ],
+                                "id": 106,
+                                "name": "MemberAccess",
+                                "src": "1338:44:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 80,
+                                  "type": "address",
+                                  "value": "_memberAddress"
+                                },
+                                "id": 107,
+                                "name": "Identifier",
+                                "src": "1383:14:0"
+                              }
+                            ],
+                            "id": 108,
+                            "name": "IndexAccess",
+                            "src": "1338:60:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 96,
+                              "type": "struct SimplyWaterToken.HouseMember memory",
+                              "value": "newMember"
+                            },
+                            "id": 109,
+                            "name": "Identifier",
+                            "src": "1401:9:0"
+                          }
+                        ],
+                        "id": 110,
+                        "name": "Assignment",
+                        "src": "1338:72:0"
+                      }
+                    ],
+                    "id": 111,
+                    "name": "ExpressionStatement",
+                    "src": "1338:72:0"
+                  }
+                ],
+                "id": 112,
+                "name": "Block",
+                "src": "1175:242:0"
+              }
+            ],
+            "id": 113,
+            "name": "FunctionDefinition",
+            "src": "1048:369:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "setDailyLimit",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_dailyLimit",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 114,
+                        "name": "ElementaryTypeName",
+                        "src": "1446:4:0"
+                      }
+                    ],
+                    "id": 115,
+                    "name": "VariableDeclaration",
+                    "src": "1446:16:0"
+                  }
+                ],
+                "id": 116,
+                "name": "ParameterList",
+                "src": "1445:18:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 119,
+                "name": "ParameterList",
+                "src": "1481:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 350,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 117,
+                    "name": "Identifier",
+                    "src": "1464:9:0"
+                  }
+                ],
+                "id": 118,
+                "name": "ModifierInvocation",
+                "src": "1464:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 9,
+                              "type": "uint256",
+                              "value": "dailyLimit"
+                            },
+                            "id": 120,
+                            "name": "Identifier",
+                            "src": "1491:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 115,
+                              "type": "uint256",
+                              "value": "_dailyLimit"
+                            },
+                            "id": 121,
+                            "name": "Identifier",
+                            "src": "1504:11:0"
+                          }
+                        ],
+                        "id": 122,
+                        "name": "Assignment",
+                        "src": "1491:24:0"
+                      }
+                    ],
+                    "id": 123,
+                    "name": "ExpressionStatement",
+                    "src": "1491:24:0"
+                  }
+                ],
+                "id": 124,
+                "name": "Block",
+                "src": "1481:41:0"
+              }
+            ],
+            "id": 125,
+            "name": "FunctionDefinition",
+            "src": "1423:99:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "setPenaltyChargePerLiter",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_penaltyCharge",
+                      "scope": 137,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 126,
+                        "name": "ElementaryTypeName",
+                        "src": "1562:4:0"
+                      }
+                    ],
+                    "id": 127,
+                    "name": "VariableDeclaration",
+                    "src": "1562:19:0"
+                  }
+                ],
+                "id": 128,
+                "name": "ParameterList",
+                "src": "1561:21:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 131,
+                "name": "ParameterList",
+                "src": "1600:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 350,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 129,
+                    "name": "Identifier",
+                    "src": "1583:9:0"
+                  }
+                ],
+                "id": 130,
+                "name": "ModifierInvocation",
+                "src": "1583:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 11,
+                              "type": "uint256",
+                              "value": "penaltyChargePerLiter"
+                            },
+                            "id": 132,
+                            "name": "Identifier",
+                            "src": "1610:21:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 127,
+                              "type": "uint256",
+                              "value": "_penaltyCharge"
+                            },
+                            "id": 133,
+                            "name": "Identifier",
+                            "src": "1634:14:0"
+                          }
+                        ],
+                        "id": 134,
+                        "name": "Assignment",
+                        "src": "1610:38:0"
+                      }
+                    ],
+                    "id": 135,
+                    "name": "ExpressionStatement",
+                    "src": "1610:38:0"
+                  }
+                ],
+                "id": 136,
+                "name": "Block",
+                "src": "1600:55:0"
+              }
+            ],
+            "id": 137,
+            "name": "FunctionDefinition",
+            "src": "1528:127:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "setNormalChargePerLiter",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_normalCharge",
+                      "scope": 149,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 138,
+                        "name": "ElementaryTypeName",
+                        "src": "1694:4:0"
+                      }
+                    ],
+                    "id": 139,
+                    "name": "VariableDeclaration",
+                    "src": "1694:18:0"
+                  }
+                ],
+                "id": 140,
+                "name": "ParameterList",
+                "src": "1693:20:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 143,
+                "name": "ParameterList",
+                "src": "1731:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 350,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 141,
+                    "name": "Identifier",
+                    "src": "1714:9:0"
+                  }
+                ],
+                "id": 142,
+                "name": "ModifierInvocation",
+                "src": "1714:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 13,
+                              "type": "uint256",
+                              "value": "normalChargePerLiter"
+                            },
+                            "id": 144,
+                            "name": "Identifier",
+                            "src": "1741:20:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 139,
+                              "type": "uint256",
+                              "value": "_normalCharge"
+                            },
+                            "id": 145,
+                            "name": "Identifier",
+                            "src": "1764:13:0"
+                          }
+                        ],
+                        "id": 146,
+                        "name": "Assignment",
+                        "src": "1741:36:0"
+                      }
+                    ],
+                    "id": 147,
+                    "name": "ExpressionStatement",
+                    "src": "1741:36:0"
+                  }
+                ],
+                "id": 148,
+                "name": "Block",
+                "src": "1731:53:0"
+              }
+            ],
+            "id": 149,
+            "name": "FunctionDefinition",
+            "src": "1661:123:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "topUpBalance",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_meterAddress",
+                      "scope": 175,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 150,
+                        "name": "ElementaryTypeName",
+                        "src": "1812:7:0"
+                      }
+                    ],
+                    "id": 151,
+                    "name": "VariableDeclaration",
+                    "src": "1812:21:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "value",
+                      "scope": 175,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 152,
+                        "name": "ElementaryTypeName",
+                        "src": "1835:4:0"
+                      }
+                    ],
+                    "id": 153,
+                    "name": "VariableDeclaration",
+                    "src": "1835:10:0"
+                  }
+                ],
+                "id": 154,
+                "name": "ParameterList",
+                "src": "1811:35:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 157,
+                "name": "ParameterList",
+                "src": "1864:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 350,
+                      "type": "modifier ()",
+                      "value": "onlyOwner"
+                    },
+                    "id": 155,
+                    "name": "Identifier",
+                    "src": "1847:9:0"
+                  }
+                ],
+                "id": 156,
+                "name": "ModifierInvocation",
+                "src": "1847:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 958,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 158,
+                            "name": "Identifier",
+                            "src": "1874:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "!=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "meterAddress",
+                                  "referencedDeclaration": 22,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct SimplyWaterToken.Meter storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 17,
+                                          "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+                                          "value": "registeredMeters"
+                                        },
+                                        "id": 159,
+                                        "name": "Identifier",
+                                        "src": "1882:16:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 151,
+                                          "type": "address",
+                                          "value": "_meterAddress"
+                                        },
+                                        "id": 160,
+                                        "name": "Identifier",
+                                        "src": "1899:13:0"
+                                      }
+                                    ],
+                                    "id": 161,
+                                    "name": "IndexAccess",
+                                    "src": "1882:31:0"
+                                  }
+                                ],
+                                "id": 162,
+                                "name": "MemberAccess",
+                                "src": "1882:44:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "address",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_rational_0_by_1",
+                                          "typeString": "int_const 0"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)",
+                                      "value": "address"
+                                    },
+                                    "id": 163,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "1930:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "30",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0"
+                                    },
+                                    "id": 164,
+                                    "name": "Literal",
+                                    "src": "1938:1:0"
+                                  }
+                                ],
+                                "id": 165,
+                                "name": "FunctionCall",
+                                "src": "1930:10:0"
+                              }
+                            ],
+                            "id": 166,
+                            "name": "BinaryOperation",
+                            "src": "1882:58:0"
+                          }
+                        ],
+                        "id": 167,
+                        "name": "FunctionCall",
+                        "src": "1874:67:0"
+                      }
+                    ],
+                    "id": 168,
+                    "name": "ExpressionStatement",
+                    "src": "1874:67:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "bool",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 677,
+                              "type": "function (address,uint256) returns (bool)",
+                              "value": "mint"
+                            },
+                            "id": 169,
+                            "name": "Identifier",
+                            "src": "1951:4:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 151,
+                              "type": "address",
+                              "value": "_meterAddress"
+                            },
+                            "id": 170,
+                            "name": "Identifier",
+                            "src": "1956:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 153,
+                              "type": "uint256",
+                              "value": "value"
+                            },
+                            "id": 171,
+                            "name": "Identifier",
+                            "src": "1971:5:0"
+                          }
+                        ],
+                        "id": 172,
+                        "name": "FunctionCall",
+                        "src": "1951:26:0"
+                      }
+                    ],
+                    "id": 173,
+                    "name": "ExpressionStatement",
+                    "src": "1951:26:0"
+                  }
+                ],
+                "id": 174,
+                "name": "Block",
+                "src": "1864:124:0"
+              }
+            ],
+            "id": 175,
+            "name": "FunctionDefinition",
+            "src": "1790:198:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "burn",
+              "payable": false,
+              "scope": 222,
+              "stateMutability": "nonpayable",
+              "superFunction": 526,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "tokensToBurn",
+                      "scope": 208,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 176,
+                        "name": "ElementaryTypeName",
+                        "src": "2008:4:0"
+                      }
+                    ],
+                    "id": 177,
+                    "name": "VariableDeclaration",
+                    "src": "2008:17:0"
+                  }
+                ],
+                "id": 178,
+                "name": "ParameterList",
+                "src": "2007:19:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 179,
+                "name": "ParameterList",
+                "src": "2034:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 958,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 180,
+                            "name": "Identifier",
+                            "src": "2044:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "!=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "meterAddress",
+                                  "referencedDeclaration": 22,
+                                  "type": "address"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct SimplyWaterToken.Meter storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 17,
+                                          "type": "mapping(address => struct SimplyWaterToken.Meter storage ref)",
+                                          "value": "registeredMeters"
+                                        },
+                                        "id": 181,
+                                        "name": "Identifier",
+                                        "src": "2052:16:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": false,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "member_name": "sender",
+                                          "referencedDeclaration": null,
+                                          "type": "address"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 955,
+                                              "type": "msg",
+                                              "value": "msg"
+                                            },
+                                            "id": 182,
+                                            "name": "Identifier",
+                                            "src": "2069:3:0"
+                                          }
+                                        ],
+                                        "id": 183,
+                                        "name": "MemberAccess",
+                                        "src": "2069:10:0"
+                                      }
+                                    ],
+                                    "id": 184,
+                                    "name": "IndexAccess",
+                                    "src": "2052:28:0"
+                                  }
+                                ],
+                                "id": 185,
+                                "name": "MemberAccess",
+                                "src": "2052:41:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "isStructConstructorCall": false,
+                                  "lValueRequested": false,
+                                  "names": [
+                                    null
+                                  ],
+                                  "type": "address",
+                                  "type_conversion": true
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": [
+                                        {
+                                          "typeIdentifier": "t_rational_0_by_1",
+                                          "typeString": "int_const 0"
+                                        }
+                                      ],
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "type": "type(address)",
+                                      "value": "address"
+                                    },
+                                    "id": 186,
+                                    "name": "ElementaryTypeNameExpression",
+                                    "src": "2097:7:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "hexvalue": "30",
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": true,
+                                      "lValueRequested": false,
+                                      "subdenomination": null,
+                                      "token": "number",
+                                      "type": "int_const 0",
+                                      "value": "0"
+                                    },
+                                    "id": 187,
+                                    "name": "Literal",
+                                    "src": "2105:1:0"
+                                  }
+                                ],
+                                "id": 188,
+                                "name": "FunctionCall",
+                                "src": "2097:10:0"
+                              }
+                            ],
+                            "id": 189,
+                            "name": "BinaryOperation",
+                            "src": "2052:55:0"
+                          }
+                        ],
+                        "id": 190,
+                        "name": "FunctionCall",
+                        "src": "2044:64:0"
+                      }
+                    ],
+                    "id": 191,
+                    "name": "ExpressionStatement",
+                    "src": "2044:64:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 958,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 192,
+                            "name": "Identifier",
+                            "src": "2118:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 389,
+                                      "type": "mapping(address => uint256)",
+                                      "value": "balances"
+                                    },
+                                    "id": 193,
+                                    "name": "Identifier",
+                                    "src": "2126:8:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "sender",
+                                      "referencedDeclaration": null,
+                                      "type": "address"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 955,
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 194,
+                                        "name": "Identifier",
+                                        "src": "2135:3:0"
+                                      }
+                                    ],
+                                    "id": 195,
+                                    "name": "MemberAccess",
+                                    "src": "2135:10:0"
+                                  }
+                                ],
+                                "id": 196,
+                                "name": "IndexAccess",
+                                "src": "2126:20:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 177,
+                                  "type": "uint256",
+                                  "value": "tokensToBurn"
+                                },
+                                "id": 197,
+                                "name": "Identifier",
+                                "src": "2150:12:0"
+                              }
+                            ],
+                            "id": 198,
+                            "name": "BinaryOperation",
+                            "src": "2126:36:0"
+                          }
+                        ],
+                        "id": 199,
+                        "name": "FunctionCall",
+                        "src": "2118:45:0"
+                      }
+                    ],
+                    "id": 200,
+                    "name": "ExpressionStatement",
+                    "src": "2118:45:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "burn",
+                              "referencedDeclaration": 526,
+                              "type": "function (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 983,
+                                  "type": "contract super SimplyWaterToken",
+                                  "value": "super"
+                                },
+                                "id": 201,
+                                "name": "Identifier",
+                                "src": "2173:5:0"
+                              }
+                            ],
+                            "id": 203,
+                            "name": "MemberAccess",
+                            "src": "2173:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 177,
+                              "type": "uint256",
+                              "value": "tokensToBurn"
+                            },
+                            "id": 204,
+                            "name": "Identifier",
+                            "src": "2184:12:0"
+                          }
+                        ],
+                        "id": 205,
+                        "name": "FunctionCall",
+                        "src": "2173:24:0"
+                      }
+                    ],
+                    "id": 206,
+                    "name": "ExpressionStatement",
+                    "src": "2173:24:0"
+                  }
+                ],
+                "id": 207,
+                "name": "Block",
+                "src": "2034:170:0"
+              }
+            ],
+            "id": 208,
+            "name": "FunctionDefinition",
+            "src": "1994:210:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "topUpBalanceWithEther",
+              "payable": true,
+              "scope": 222,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_meterAddress",
+                      "scope": 221,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 209,
+                        "name": "ElementaryTypeName",
+                        "src": "2241:7:0"
+                      }
+                    ],
+                    "id": 210,
+                    "name": "VariableDeclaration",
+                    "src": "2241:21:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "value",
+                      "scope": 221,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 211,
+                        "name": "ElementaryTypeName",
+                        "src": "2264:4:0"
+                      }
+                    ],
+                    "id": 212,
+                    "name": "VariableDeclaration",
+                    "src": "2264:10:0"
+                  }
+                ],
+                "id": 213,
+                "name": "ParameterList",
+                "src": "2240:35:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 214,
+                "name": "ParameterList",
+                "src": "2291:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                },
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 175,
+                              "type": "function (address,uint256)",
+                              "value": "topUpBalance"
+                            },
+                            "id": 215,
+                            "name": "Identifier",
+                            "src": "2301:12:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 210,
+                              "type": "address",
+                              "value": "_meterAddress"
+                            },
+                            "id": 216,
+                            "name": "Identifier",
+                            "src": "2314:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 212,
+                              "type": "uint256",
+                              "value": "value"
+                            },
+                            "id": 217,
+                            "name": "Identifier",
+                            "src": "2329:5:0"
+                          }
+                        ],
+                        "id": 218,
+                        "name": "FunctionCall",
+                        "src": "2301:34:0"
+                      }
+                    ],
+                    "id": 219,
+                    "name": "ExpressionStatement",
+                    "src": "2301:34:0"
+                  }
+                ],
+                "id": 220,
+                "name": "Block",
+                "src": "2291:51:0"
+              }
+            ],
+            "id": 221,
+            "name": "FunctionDefinition",
+            "src": "2210:132:0"
+          }
+        ],
+        "id": 222,
+        "name": "ContractDefinition",
+        "src": "162:2185:0"
+      }
+    ],
+    "id": 223,
+    "name": "SourceUnit",
+    "src": "0:2347:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-29T23:26:48.914Z"
+}
