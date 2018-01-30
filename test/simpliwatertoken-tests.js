@@ -1,6 +1,6 @@
-var SimplyWaterToken = artifacts.require('./SimplyWaterToken.sol');
+var SimplyWaterToken = artifacts.require('./SimpliWaterToken.sol');
 
-contract('SimplyWaterToken', function (accounts) {
+contract('SimpliWaterToken', function (accounts) {
    let contract;
    const admin = accounts[0];
    const meter = accounts[1];      

@@ -2,7 +2,7 @@ pragma solidity ^0.4.18;
 import "./helpers/CustomMintableToken.sol";
 import "zeppelin-solidity/contracts/token/ERC20/BurnableToken.sol";
 
-contract SimplyWaterToken is CustomMintableToken, BurnableToken {
+contract SimpliWaterToken is CustomMintableToken, BurnableToken {
 
     uint private dailyLimit; //1000 = 1L
     uint private penaltyChargePerLiter; //1000 = 1R
@@ -22,7 +22,7 @@ contract SimplyWaterToken is CustomMintableToken, BurnableToken {
         address memberAddress;
     }
 
-    function SimplyWaterToken() public {
+    function SimpliWaterToken() public {
         totalSupply_ = 0; // New coins will continuously be minted when needed.
         dailyLimit = 50000;
         penaltyChargePerLiter = 4000;

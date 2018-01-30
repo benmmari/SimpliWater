@@ -1,5 +1,5 @@
-var SimplyWaterToken = artifacts.require("SimplyWaterToken");
+var SimpliWaterToken = artifacts.require("SimpliWaterToken");
 
 module.exports = function(deployer) {
-    deployer.deploy(SimplyWaterToken);
+    deployer.deploy(SimpliWaterToken);
 };
