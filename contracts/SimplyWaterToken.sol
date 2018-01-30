@@ -1,18 +1,19 @@
 pragma solidity ^0.4.18;
-import "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
+import "./helpers/CustomMintableToken.sol";
 import "zeppelin-solidity/contracts/token/ERC20/BurnableToken.sol";
 
-contract SimplyWaterToken is MintableToken, BurnableToken {
+contract SimplyWaterToken is CustomMintableToken, BurnableToken {
 
-    uint dailyLimit;
-    uint penaltyChargePerLiter;
-    uint normalChargePerLiter;
-    mapping(address => Meter) registeredMeters;
-    uint constant ETHERIUM_TO_SWT_EXCHANGE_RATE = 2;
+    uint private dailyLimit; //1000 = 1L
+    uint private penaltyChargePerLiter; //1000 = 1R
+    uint private normalChargePerLiter; //1000 = 1R
+    mapping(address => Meter) private registeredMeters;
+    uint private constant ETHERIUM_TO_SWT_EXCHANGE_RATE = 2; // 1 ETH = 2 SWT for the sake of the proof of concept.
 
     struct Meter {
         address meterAddress;
         mapping(address => HouseMember) houseMembers;
+        uint totalHouseMembers;
     }
 
     struct HouseMember {
@@ -22,45 +23,76 @@ contract SimplyWaterToken is MintableToken, BurnableToken {
     }
 
     function SimplyWaterToken() public {
-        totalSupply_ = 0; //there is no total supply. New coins will continuously be minted.
+        totalSupply_ = 0; // New coins will continuously be minted when needed.
+        dailyLimit = 50000;
+        penaltyChargePerLiter = 4000;
+        normalChargePerLiter = 1000;
     }
    
     function registerMeter(address _meterAddress) onlyOwner public {
         require(registeredMeters[_meterAddress].meterAddress == address(0));
-        var newMeter = Meter({meterAddress: _meterAddress});
+        var newMeter = Meter({meterAddress: _meterAddress, totalHouseMembers:0});
         registeredMeters[_meterAddress] = newMeter;
+    }
+
+    function retrieveMeterHouseMemberTotal(address _meterAddress) onlyOwner view public returns(address meterAddress, uint totalHouseMembers) {
+        require(registeredMeters[_meterAddress].meterAddress != address(0));
+        return (registeredMeters[_meterAddress].meterAddress, registeredMeters[_meterAddress].totalHouseMembers);
     }
 
    function addUserToMeter(address _meterAddress, bytes16 _firstName, bytes16 _lastName, address _memberAddress) onlyOwner public {
         require(registeredMeters[_meterAddress].meterAddress != address(0));
+        require(registeredMeters[_meterAddress].houseMembers[_memberAddress].memberAddress == address(0));        
         var newMember = HouseMember(_firstName, _lastName, _memberAddress);
         registeredMeters[_meterAddress].houseMembers[_memberAddress] = newMember;
+        registeredMeters[_meterAddress].totalHouseMembers += 1;
     }
 
     function setDailyLimit(uint _dailyLimit) onlyOwner public {
         dailyLimit = _dailyLimit;
     }
 
+   function getDailyLimit() view public returns(uint _dailyLimit) {
+        return dailyLimit;
+    }
+
     function setPenaltyChargePerLiter(uint _penaltyCharge) onlyOwner public {
         penaltyChargePerLiter = _penaltyCharge;
+    }
+
+   function getPenaltyChargePerLiter() view public returns (uint penaltyCharge) {
+        return penaltyChargePerLiter;
     }
 
     function setNormalChargePerLiter(uint _normalCharge) onlyOwner public {
         normalChargePerLiter = _normalCharge;
     }
 
-    function topUpBalance(address _meterAddress, uint value) onlyOwner public {
+    function getNormalChargePerLiter() view public returns(uint _normalCharge) {
+        return normalChargePerLiter;
+    }
+
+    function topUpBalance(address _meterAddress, uint _value) onlyOwner public {
+        topUp(_meterAddress, _value);
+    }
+
+    function topUp(address _meterAddress, uint _value) private {
         require(registeredMeters[_meterAddress].meterAddress != address(0));
-        mint(_meterAddress, value);    
+        mint(_meterAddress, _value);    
     }
 
-    function burn(uint tokensToBurn) public {
+    function burn(uint _tokensToBurn) public {
         require(registeredMeters[msg.sender].meterAddress != address(0));
-        require(balances[msg.sender] >= tokensToBurn);
-        super.burn(tokensToBurn);
+        require(balances[msg.sender] >= _tokensToBurn);
+        super.burn(_tokensToBurn);
     }
 
-    function topUpBalanceWithEther(address _meterAddress, uint value) payable public {
-        topUpBalance(_meterAddress, value);
+    function topUpBalanceWithEther(address _meterAddress, uint _value) payable public {
+        topUp(_meterAddress, _value);
     }
+
+    function getEthBalance(address _meterAddress) constant public returns(uint) {
+    return _meterAddress.balance;
+    }
+
    }
