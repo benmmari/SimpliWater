@@ -43,7 +43,7 @@ contract('SimpliWaterToken', function (accounts) {
         await contract.registerMeter(meter);
         let returnedMeter = await contract.retrieveMeterHouseMemberTotal(meter);
         assert.equal(returnedMeter[0], meter);
-        assert.equal(returnedMeter[1], 0);        
+        assert.equal(returnedMeter[1], 0);  
       });
 
       it("Owner can add user to meter", async function() {
@@ -69,7 +69,7 @@ contract('SimpliWaterToken', function (accounts) {
 
       it("Meter can burn an arbitrary amount", async function() { 
         let burnAmount = 500;      
-        let meterBalanceBefore = await contract.balanceOf(meter);  
+        let meterBalanceBefore = await contract.getTokenBalance(meter);  
         await contract.burn(burnAmount, {from: meter});
         let meterBalanceAfter = await contract.balanceOf(meter); 
         assert.equal(parseInt(meterBalanceAfter), parseInt(meterBalanceBefore) - parseInt(burnAmount));

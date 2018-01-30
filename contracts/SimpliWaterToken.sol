@@ -22,6 +22,10 @@ contract SimpliWaterToken is CustomMintableToken, BurnableToken {
         address memberAddress;
     }
 
+    event MeterRegisteredEvent(address _meterAddress);
+    event UserAddedEvent(address _meterAddress, address _memberAddress);
+    
+
     function SimpliWaterToken() public {
         totalSupply_ = 0; // New coins will continuously be minted when needed.
         dailyLimit = 50000;
@@ -33,6 +37,7 @@ contract SimpliWaterToken is CustomMintableToken, BurnableToken {
         require(registeredMeters[_meterAddress].meterAddress == address(0));
         var newMeter = Meter({meterAddress: _meterAddress, totalHouseMembers:0});
         registeredMeters[_meterAddress] = newMeter;
+        MeterRegisteredEvent(_meterAddress);
     }
 
     function retrieveMeterHouseMemberTotal(address _meterAddress) onlyOwner view public returns(address meterAddress, uint totalHouseMembers) {
@@ -46,6 +51,7 @@ contract SimpliWaterToken is CustomMintableToken, BurnableToken {
         var newMember = HouseMember(_firstName, _lastName, _memberAddress);
         registeredMeters[_meterAddress].houseMembers[_memberAddress] = newMember;
         registeredMeters[_meterAddress].totalHouseMembers += 1;
+        UserAddedEvent(_meterAddress, _memberAddress);
     }
 
     function setDailyLimit(uint _dailyLimit) onlyOwner public {
@@ -91,7 +97,12 @@ contract SimpliWaterToken is CustomMintableToken, BurnableToken {
         topUp(_meterAddress, _value);
     }
 
-    function getEthBalance(address _meterAddress) constant public returns(uint) {
+
+    function getTokenBalance(address _meterAddress) view public returns(uint) {
+    return balances[_meterAddress];
+    }
+
+    function getEthBalance(address _meterAddress) view public returns(uint) {
     return _meterAddress.balance;
     }
 
